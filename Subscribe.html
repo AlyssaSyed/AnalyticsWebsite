@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel ="stylesheet" type= "text/css" href= "css/style.css">
+    
+</head>
+<body onload="MainMenu(event);">
+    <ul>
+        <li><a href= 'index.html'>Home</a></li>
+        <li><a href= 'login.html'>Login</a></li>
+        
+    </ul>
+    <div class ="container">
+
+        <div class= "box">
+            <h3>ONE DAY</h3>
+            <h2>$</h2>
+            <h1>30</h1>
+            <input type="button" id="button1" value="Subscribe" class="btn" disabled/>    
+        </div>
+
+        <div class= "box">
+            <h3>QUARTER</h3>
+            <h2>$</h2>
+            <h1>90</h1>
+           
+            <input type="button" id="button2" value="Subscribe" class="btn" disabled/>
+            
+         </div>
+
+        <div class= "box">
+            <h3>YEAR</h3>
+            <div class= "dollar">
+            <h2>$</h2>
+            </div>
+            <h1>290</h1>
+            <input type="button" id="button3" value="Subscribe" class="btn" disabled/>
+        </div>
+         
+    </div>
+
+        <label><input type="checkbox" id="cb1" name="checkbox-0"  onClick="myFunction()" class="cagree" /> I have read & accept</label>
+        <a href="Terms.html">Terms of Use</a>
+    
+
+    <script>
+   
+    function myFunction () {
+
+        var cb1 = document.getElementById("cb1");
+        
+        if(cb1.checked ){ 
+            
+            document.getElementById("button1").disabled = false;
+            document.getElementById("button2").disabled = false;
+            document.getElementById("button3").disabled = false;
+ 
+            document.getElementsByClassName("btn").disabled = false;
+
+           } else 
+               { 
+                  
+                   document.getElementById("button1").disabled = true;
+                   document.getElementById("button2").disabled = true;
+                   document.getElementById("button3").disabled = true;
+                   document.getElementsByClassName("btn").disabled = true;
+               } 
+    }
+
+    function MainMenu(evt) {
+        document.getElementsByClassName("cagree").checked = false;
+        document.getElementById("button1").disabled = true;
+        document.getElementById("button2").disabled = true;
+        document.getElementById("button3").disabled = true;
+        document.getElementsByClassName("btn").disabled = true;
+        }
+        
+    </script>
+    <style>
+
+        .container{
+            width: 100%;
+            padding: 20px;
+            background:white;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .dollar{
+            margin-top: 55px;
+            margin-right: 35px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 20;
+        }
+        .box h2{
+            margin-top: 55px;
+            margin-right: 75px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 20;
+        }
+        .box h1{
+            margin-top: -35px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 60;
+        }
+
+        .box h3{
+            margin-top: 60px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .box{
+            width: 250px;
+            height: 300px;
+            background: rgb(107, 197, 233);
+            float: left;
+            margin: 0px 10px;
+            transition: 1s;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .box:hover{
+            transform: scale(1.3);
+            background: rgb(183, 220, 241);
+            box-shadow: 2px 2px 2px #000;
+            z-index: 2;
+        }
+        .btn {
+            
+            background-color: #dda89f;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 12px 37px;
+            text-align: center;
+            font-size: 16px;
+            margin: 22px 2px;
+            opacity: 1;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+        background-color: black;
+        color: white;
+        }
+
+        .btn:disabled {
+        background: #999;
+        color: #555;
+        cursor: not-allowed;
+        }
+        
+        .cagree{
+        margin-bottom: 300px;
+        margin-left: 500px;
+
+        }
+
+    </style>
+</body>
+</html>

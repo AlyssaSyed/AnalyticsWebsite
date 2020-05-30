@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel ="stylesheet" type= "text/css" href= "css/style.css">
+</head>
+<body>
+    <ul>
+        <li><a href= 'index.html'>Home</a></li>
+        <li><a href= 'login.html'>Login</a></li>
+        <li><a href= 'Subscribe.html'>Subscribe</a></li>
+    </ul>
+<form class= "box" action="login.html" method="post">
+    <h1>Login</h1>
+    <input type="text" name=""placeholder="Username">
+    <input type="password" name="" placeholder="Password">
+    <input type="submit" name="" value="Login">
+    
+    <div class ="bottom-text">
+        <input type="checkbox" name="remember" checked= "checked"> Remember me
+        <a href="Reset.html">Forgot Password ? </a>
+    </div> 
+</form>
+ 
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: white;
+ }
+ .box{
+width: 300px;
+padding: 40px;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+background: #191919;
+text-align: center;
+
+ }
+ .box h1{
+     color: white;
+     text-transform: uppercase;
+     font-weight: 500;
+ }
+ .box input[type = "text"], .box input[type="password"]{
+     border:0;
+     background: none;
+     display: block;
+     margin: 20px auto;
+     text-align: center;
+     border: 2px solid #3498db;
+     padding: 14px 10px;
+     width: 200px;
+     outline: none;
+     color: white;
+     border-radius: 24px;
+     transition: 0.25s;
+ }
+ .box input[type = "text"]:focus, .box input[type="password"]:focus{
+ width:280px;
+ border-color: #2ecc71;
+
+}
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background: #2ecc71;
+}
+.bottom-text{
+    color:#fff;
+    
+}
+.bottom-text input{
+    text-decoration: none;
+    width: 5%;
+    float: left;
+    margin-right: -20px;
+    vertical-align: left;
+    
+}
+.bottom-text a{
+    width: 5%;
+    float: right;
+    margin-right: 120px;
+    text-decoration: none;
+    color:#33D8FF;
+    white-space: nowrap;
+    
+   
+ 
+
+}
+
+</style>
+</body>
+
+</html>
